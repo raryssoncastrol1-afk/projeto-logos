@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { Verse, MemorizationMode } from '../types/doctrine';
+import type { Verse, MemorizationMode } from '../types/westminster';
 import { CheckCircle2, RotateCcw, Eye, EyeOff, Sparkles, HelpCircle } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
