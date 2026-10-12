@@ -11,9 +11,16 @@ export const DoctrineDetails: React.FC<DoctrineDetailsProps> = ({ doctrine }) =>
     <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 backdrop-blur-sm space-y-6">
       {/* Título & Berkhof Reference */}
       <div>
-        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-amber-500 mb-1">
-          <BookOpen className="w-4 h-4" />
-          <span>{doctrine.berkhofSection}</span>
+        <div className="flex flex-wrap items-center gap-2 mb-2">
+          <span className="flex items-center gap-1.5 text-xs font-mono uppercase tracking-wider text-amber-500">
+            <BookOpen className="w-4 h-4" />
+            {doctrine.berkhofSection}
+          </span>
+          {doctrine.westminsterRef && (
+            <span className="text-xs font-mono bg-amber-500/10 border border-amber-500/30 text-amber-300 px-2.5 py-0.5 rounded-full font-semibold">
+              🏛️ {doctrine.westminsterRef}
+            </span>
+          )}
         </div>
         <h2 className="text-2xl md:text-3xl font-extrabold text-slate-100 font-serif">
           {doctrine.title}

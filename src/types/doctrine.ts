@@ -19,6 +19,7 @@ export interface Doctrine {
   locus: LocusType;
   title: string;
   berkhofSection: string; // Ex: "Parte 1: A Doutrina de Deus - Os Decretos Divinos"
+  westminsterRef?: string; // Ex: "CFW Cap. III / BCW P. 7"
   summary: string;
   historicalOrigin: {
     period: string; // Ex: "Reforma Protestante (Séc. XVI) / Sínodo de Dort (1618-1619)"
